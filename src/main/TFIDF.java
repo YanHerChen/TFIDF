@@ -19,29 +19,29 @@ public class TFIDF {
 	public ArrayList<String[]> TFIDF(String[] document) {
 		doc_size = document.length;
 
-        for(String sentence:document) {
-        	String[] spl = sentence.split("	");
-        	for(String st:spl) {
-        		tf(st);
-    			df(st);
-        	}
-        }
-        
-        return TFIDF_cal();
+		for(String sentence:document) {
+			String[] spl = sentence.split("	");
+			for(String st:spl) {
+				tf(st);
+				df(st);
+			}
+		}
+
+		return TFIDF_cal();
 	}
 	
 	public ArrayList<String[]> TFIDF(ArrayList<String> document) {
 		doc_size = document.size();
 		
-        for(String sentence:document) {
-        	String[] spl = sentence.split("	");
-        	for(String st:spl) {
-        		tf(st);
-    			df(st);
-        	}
-        }
+		for(String sentence:document) {
+			String[] spl = sentence.split("	");
+			for(String st:spl) {
+				tf(st);
+				df(st);
+			}
+		}
         
-        return TFIDF_cal();
+        	return TFIDF_cal();
 	}
 
 	private void tf(String st) {
