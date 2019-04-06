@@ -9,5 +9,5 @@
 ![image](https://github.com/YanHerChen/TFIDF/blob/master/readme/1554545985789.jpg)
 
 ## 輸出資料
-word, term count, document count, tf, df, tfidf
+    word, term count, document count, tf, df, tfidf
 ![image](https://github.com/YanHerChen/TFIDF/blob/master/readme/1554546404201.jpg)
