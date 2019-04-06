@@ -30,15 +30,15 @@ public class demo {
 	
 	public static ArrayList<String> read_data() throws IOException {
 		FileInputStream fis = new FileInputStream(FilePath); 
-        InputStreamReader isr = new InputStreamReader(fis, "UTF-8"); 
-        BufferedReader br = new BufferedReader(isr); 
-        String line = null; 
+        	InputStreamReader isr = new InputStreamReader(fis, "UTF-8"); 
+        	BufferedReader br = new BufferedReader(isr); 
+        	String line = null; 
         
-        ArrayList<String> document = new ArrayList<String>();
-        while ((line = br.readLine()) != null) { 
-        	document.add(line);
-        }
-        
-        return document;
+		ArrayList<String> document = new ArrayList<String>();
+		while ((line = br.readLine()) != null) { 
+			document.add(line);
+		}
+
+		return document;
 	}
 }
